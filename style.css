@@ -48,20 +48,21 @@
   }
   
   .a {
-    top: 60%;
-    left: -15px;
-    transform: rotate(-45deg);
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
   }
   
   .b {
-    top: 60%;
-    right: -15px;
-    transform: rotate(45deg);
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
   }
   
   .h {
-    top: 20%;
-    left: 48%;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
   }
   
   form {
@@ -99,4 +100,3 @@
     margin-top: 15px;
     font-weight: bold;
   }
-  
