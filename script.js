@@ -4,12 +4,12 @@ function calculateArea() {
     const resultElement = document.getElementById('result');
   
     if (isNaN(base) || isNaN(height) || base <= 0 || height <= 0) {
-      resultElement.textContent = "Please enter valid positive numbers for base and height.";
+      resultElement.textContent = "Pastikan kedua sisi diisi dengan angka yang valid";
       return;
     }
   
     const area = (base * height) / 2;
-    resultElement.textContent = `The area of the triangle is: ${area.toFixed(2)} square units.`;
+    resultElement.textContent = `Luas segitiga: ${area.toFixed(2)}`;
   }
   
   // Event listeners for real-time update
