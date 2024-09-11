@@ -1,29 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Triangle Area Calculator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Triangle Illustration -->
-     <section>
-        <img src="triangle.png" alt="">
-     </section>
-     <!-- Calculation -->
-     <section>
-        <div>
-            <label for="alas">Alas</label>
-            <input type="number" name="alas" id="alas">
-        </div>
-        <div>
-            <label for="tinggi">Tinggi</label>
-            <input type="number" name="tinggi" id="tinggi">
-        </div>
-        <div>
-            <p>Hasil:</p>
-            <p id="hasil"></p>
-        </div>
-     </section>
+  <div class="container">
+    <h1>Triangle Area Calculator</h1>
+
+    <!-- Triangle Drawing -->
+    <div class="triangle-container">
+      <div class="triangle">
+        <span class="label a">a</span>
+        <span class="label b">b</span>
+        <span class="label h">h</span>
+      </div>
+    </div>
+
+    <!-- Area Calculation Form -->
+    <form id="triangleForm">
+      <label for="base">Base (b):</label>
+      <input type="number" id="base" placeholder="Enter base in units" required>
+
+      <label for="height">Height (h):</label>
+      <input type="number" id="height" placeholder="Enter height in units" required>
+
+      <button type="submit">Calculate Area</button>
+    </form>
+
+    <p id="result">The area will be displayed here.</p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
